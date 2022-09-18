@@ -1,0 +1,129 @@
+<html lang="en" class="w-full">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tailwind/output.css">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body id="app">
+
+<!-- 1. dio -->
+
+<header>
+
+    <div class="flex justify-evenly items-center">
+        <div class="flex items-center">
+            <a href="./index.html">
+                <img class="logo_mob h-32 p-2 pl-10" src="./slike/logo.png" alt="Logo">
+            </a>
+            <div class="logo_mob p-2 italic">Choose your vehicle</div>
+            <img class="logo_mob h-20 p-2" src="./slike/skuter_logo.png" alt="Skuter logo">
+        </div>
+<!-- Prazan div zbog razmaka -->
+        <div class="flex"></div>
+        <div class="flex items-center">
+            <img class="logo_mob h-8 p-2" src="./slike/hrvatska.svg" alt="Hrv jezik">
+            <img class="logo_mob h-8 p-2" src="./slike/njemacka.png" alt="Njem jezik">
+            <img class="logo_mob h-8 p-2" src="./slike/engleska.png" alt="Eng jezik">
+            <div class="flex flex-col items-center px-5">
+                <button @click="prijava" class="logo_mob rounded-lg p-2 text-white bg-green-600 hover:bg-green-500 hover:scale-105 transition-all">Prijavi se</button>
+            </div>
+        </div>
+    </div>
+
+</header>
+<main>
+
+    <nav class="navbar">
+        <div class="brand-title">Rent & Go</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li>
+                    <a href="./index.html" class="mob_nav hover:scale-110 transition-all duration-75">Početna</a>
+                </li>
+                <li>
+                    <div class="mob_nav w-1 h-8 rounded-sm bg-green-500"></div>
+                </li>
+                <li>
+                    <a href="./moje_rezervacije.html" class="mob_nav hover:scale-110 transition-all duration-75">Moje rezervacije</a>
+                </li>
+                <li>
+                    <div class="mob_nav w-1 h-8 rounded-sm bg-green-500"></div>
+                </li>
+                <li>
+                    <a href="./lokacije.html" class="mob_nav hover:scale-110 transition-all duration-75">Lokacije</a>
+                </li>
+                <li>
+                    <div class="mob_nav w-1 h-8 rounded-sm bg-green-500"></div>
+                </li>
+                <li>
+                    <a href="./o_nama.html" class="mob_nav hover:scale-110 transition-all duration-75">O nama</a>
+                </li>
+                <li>
+                    <div class="mob_nav w-1 h-8 rounded-sm bg-green-500"></div>
+                </li>
+                <li>
+                    <a href="./kontakt.html" class="mob_nav hover:scale-110 transition-all duration-75">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <div class="offset_padding"></div>
+        <div class="p-2"></div>
+        <h1 class="font-semibold text-2xl p-4">Kontakt</h1>
+        <p class="p-4">Telefon</p>
+        <p class="p-4">E-mail</p>
+        <p class="p-4">Radno vrijeme</p>
+        <div class="p-6"></div>
+
+    </main>
+    <footer>
+            <div class="flex flex-col justify-between bg_2 h-full w-full">
+                <div class="flex flex-wrap items-start justify-around">
+                    <div class="flex flex-col items-start justify-evenly text-white mt-5">
+                        <div class="text-lg font-bold text-green-500 stroke_1 mx-8 my-4">Navigacija</div>
+                        <a href="./index.html" class="mx-8 my-4">Rezerviraj</a>
+                        <a href="./moje_rezervacije.html" class="mx-8 my-4">Moje rezervacije</a>
+                        <a href="./o_nama.html" class="mx-8 my-4">O nama</a>
+                        <a href="./kontakt.html" class="mx-8 my-4">Kontakt</a>
+                    </div>
+                    <div class="flex flex-col items-start justify-evenly text-white mt-5">
+                        <div class="text-lg font-bold text-green-500 stroke_1 mx-8 my-4">Odredbe i uvjeti</div>
+                        <div class="mx-8 my-4">Opći uvjeti</div>
+                        <div class="mx-8 my-4">Polica i privatnosti</div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-end items-center text-white">
+                    <img class="m-12 bg-white rounded-3xl" src="./slike/logo.png" alt="" width="150" height="150">
+                </div>
+                    <div class="flex justify-center items-center text-amber-400 stroke_1 mb-8">Copyright© 2021 Antonio Čutura i Matteo Pajković</div>
+            </div>
+    </footer>
+    <script src="https://unpkg.com/vue@3"></script>
+<script>
+  const { createApp } = Vue
+
+  createApp({
+    data() {
+      return {
+      }
+    },
+    methods: {
+        prijava() {
+            location.href = "./prijava.html"
+        }
+    }
+  })
+.mount('#app')
+</script>
+<script src="app.js"></script>
+</body>
+</html>
