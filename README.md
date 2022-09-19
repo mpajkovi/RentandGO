@@ -10,4 +10,4 @@ Mentor: doc. dr. sc. Nikola Tanković  https://fipu.unipu.hr/fipu/nikola.tankovi
 
 Stranica za rentanje motornih vozila
 https://github.com/mpajkovi/RentandGO.git
-Matteo je radio dizajn u figmi i html, dok je Antonio završio html i dodao vue i javascript
+Matteo je radio dizajn u figmi i html
